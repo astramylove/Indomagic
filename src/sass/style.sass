@@ -1,0 +1,1094 @@
+@font-face
+    font-family: 'Comforter Brush'
+    src: url('../fonts/ComforterBrush-Regular.woff2') format('woff2')
+
+@font-face
+    font-family: Gabriela
+    src: url('../fonts/Gabriela-Regular.woff2') format('woff2')
+
+@font-face
+    font-family: Inter
+    src: url('../fonts/Inter-Regular.woff2') format('woff2')
+
+body
+    background: #4CAF50
+    background-image: url("../img/фон.png")
+    font-family: Gabriela
+    display: flex
+    flex-direction: column
+    align-items: center
+    min-height: 100vh
+
+html,body
+    max-width: 100%
+    overflow-x: hidden
+
+main
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    flex-grow: 1
+
+.strip
+    z-index: auto
+
+.container
+    max-width: 1440px
+// Main-section
+
+.main-section
+    width: 100%
+    height: 943px
+    background-image: url("../img/фон-главной-секции.jpg")
+    background-color: rgba(0,0,0,.2)
+    background-blend-mode: multiply
+    background-repeat: no-repeat
+    background-position: center center
+    -webkit-background-size: cover
+    z-index: auto
+    &__container
+        display: flex
+        justify-content: center
+    &__text
+        position: absolute
+        margin-top: 205px
+        color: #FFF
+        text-align: center
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
+        font-family: Comforter Brush
+        font-size: 144px
+    &__strip
+        background: #4CAF50
+        filter: blur(20.5px)
+        width: 110%
+        height: 102px
+        position: absolute
+        top: 955px
+
+.header
+    display: flex
+    justify-content: center
+    background: rgba(3, 169, 244, 0.80)
+    width: 100%
+    height: 70px
+    display: flex
+    border-bottom: 1px solid #FFEB3B
+    button
+        background: none
+        border: none
+        padding: 0
+        margin-top: 10px
+    &-container
+        width: 1200px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 70px
+        .nav-menu
+            width: 564px
+            &__list
+                display: flex
+                justify-content: space-evenly
+                &-item>a
+                    text-decoration: none
+                    color: #fff
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+.burger-menu
+    display: none
+.burger
+    display: block
+    cursor: pointer
+    margin-right: 20px
+
+    & span
+        display: block
+        width: 50px
+        height: 6px
+        margin: 5px
+        background: #fff
+        transition: all 0.3s
+        border-radius: 90px
+
+#burger-toggle
+    display: none
+
+    &:checked + .burger span:nth-child(1)
+        transform: rotate(45deg) translate(6px, 6px)
+
+    &:checked + .burger span:nth-child(2)
+        opacity: 0
+
+    &:checked + .burger span:nth-child(3)
+        transform: rotate(-45deg) translate(6px, -6px)
+
+.menu
+    display: none
+    background: rgba(3, 169, 244, 0.80)
+    position: absolute
+    width: 30%
+    top: 69px
+    right: 0
+    height: 30%
+    z-index: 99
+    border-left: 2px solid #FFEB3B
+    border-bottom: 2px solid #FFEB3B
+    li
+        margin: 30px 15px
+        text-align: center
+        margin-bottom: 20px
+        a
+            text-decoration: none
+            color: #fff
+    ul
+        margin-top: 70px
+    #burger-toggle:checked + .burger + &
+        display: block
+
+//SECOND-SECTION
+
+.second-section
+    display: flex
+    justify-content: center
+    margin-top: 60px
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        display: flex
+        justify-content: center
+        width: 1163px
+        color: #FFF
+        text-align: center
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        font-family: Gabriela
+        font-size: 72px
+        margin: 20px 0
+    &__info
+        display: flex
+        align-items: center
+        .info-photo
+            display: flex
+            flex-direction: column
+            margin-right: 33px
+            &__one
+                width: 564.014px
+                height: 304.294px
+                border: 5px solid #4CAF50
+                margin-bottom: 11.41px
+            &__two
+                width: 564.014px
+                height: 304.294px
+                border: 5px solid #4CAF50
+        .info-text
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            color: #FFF
+            text-align: center
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+            font-family: Gabriela
+            font-size: 18px
+            width: 562px
+            height: 620px
+            border-radius: 30px
+            background: rgba(255, 152, 0, 0.30)
+            &__one
+                width: 524.135px
+                margin-bottom: 69px
+                margin-top: 20px
+            &__two
+                width: 514px
+
+// Cлайдер
+
+.slideshow
+    width: 1160px
+    height: 600px
+    position: relative
+    overflow: hidden
+    background: #000
+    margin: 30px 0
+    border-radius: 20px
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
+
+.slideshow-item
+    width: 100%
+    height: 100%
+    position: absolute
+
+    & img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    &-text
+        max-width: 100%
+        position: absolute
+        bottom: 0
+        left: 0
+        background: rgba(3, 169, 244, 0.70)
+        border-top: 1px solid #FFEB3B
+        color: #fff
+        padding: 20px 30px
+        font-family: Verdana, sans-serif
+
+    &-text h5
+        font-size: 22px
+        margin: 0 0 10px 0
+        color: #BFE2FF
+
+    &-text p
+        font-size: 18px
+        margin-bottom: 10px
+
+.prev-button,
+.next-button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 50px
+    height: 50px
+    background-color: transparent
+    border: none
+    font-size: 43px
+    color: #FFEB3B
+
+.prev-button
+    left: 10px
+
+.next-button
+    right: 10px
+
+@media screen and (max-width: 1100px)
+    .slideshow-item-text
+        max-width: 100%
+
+@media screen and (max-width: 456px)
+    .slideshow-item-text
+        bottom: 0
+        left: 0
+        max-width: 100%
+
+        & h5
+            font-size: 18px
+
+        & p
+            font-size: 13px
+
+.photo-slideshow
+    width: 100%
+    height: auto
+    display: none
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+    img
+        width: 26%
+        border: 5px solid #4CAF50
+    &-text
+        width: 23%
+        background: rgba(3, 169, 244, 0.70)
+        border: 1px solid #FFEB3B
+        padding: 15px
+        border-radius: 20px
+        margin: 15px 0
+        h5
+            font-size: 18px
+            color: #fff
+            margin-bottom: 10px
+        p
+            font-size: 16px
+            color: #fff
+
+// FOOter
+
+.footer
+    position: static
+    bottom: 0
+    background: rgba(3, 169, 244, 0.80)
+    width: 100%
+    height: 200px
+    display: flex
+    justify-content: center
+    border-top: 1px solid #FFEB3B
+    &__container
+        width: 1440px
+        display: flex
+        justify-content: space-around
+    &__wrapper-logo
+        margin-top: 15px
+    &__right-wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly
+        margin-left: 300px
+    a
+        text-decoration: none
+        color: #fff
+        font-family: Gabriela
+        font-size: 16px
+
+//Расписание
+.schedule-section
+    display: flex
+    justify-content: center
+    width: 100%
+    height: 1460px
+    background-image: url('../img/schedule-section/фон.jpg')
+    background-color: rgba(0,0,0,.3)
+    background-blend-mode: multiply
+    margin-bottom: 60px
+    background-repeat: no-repeat
+    background-position: center center
+    -webkit-background-size: cover
+    color: #fff
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        margin-top: 100px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly
+        &-one
+            font-size: 72px
+            margin-bottom: 10px
+        &-two
+            font-size: 36px
+            margin-bottom: 5px
+        &-three
+            font-size: 18px
+            margin-bottom: 45px
+        &-four
+            font-size: 36px
+            margin-bottom: 40px
+    &__info
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        &-group
+            font-size: 36px
+            margin-right: 80px
+            p
+                margin-bottom: 90px
+        &-date
+            height: 773px
+            font-size: 72px
+            margin-right: 60px
+            p
+                margin-bottom: 50px
+        &-price
+            height: 738px
+            font-size: 24px
+            margin-right: 40px
+            p
+                margin-bottom: 73px
+        &-places
+            height: 718px
+            font-size: 22px
+            p
+                margin-bottom: 100px
+        &-price-places
+            display: none
+            height: 738px
+            font-size: 16px
+            margin-right: 40px
+            p
+                margin-bottom: 73px
+    &__strip
+        background: #4CAF50
+        filter: blur(20.5px)
+        width: 110%
+        height: 102px
+        position: absolute
+        top: 2417px
+
+// Кнопки 
+
+.button
+    display: flex
+    justify-content: space-between
+    width: 767px
+    button
+        display: flex
+        width: 367px
+        height: 70px
+        padding: 21px 50px 20px 50px
+        justify-content: center
+        align-items: center
+        border-radius: 60px
+        border: 1px solid #FFEB3B
+        background: rgba(3, 169, 244, 0.8)
+        color: #FFEB3B
+        text-align: center
+        font-size: 22px
+    button:hover
+        background: #09AAEB
+    button:active
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset
+
+// Маршрут
+
+.route-section
+    margin: 90px 0
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        color: #FFF
+        text-align: center
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+        font-size: 72px
+        p:last-child
+            font-size: 18px
+            margin: 15px 0 30px 0
+    &__map
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.25)
+        border-radius: 30px
+        overflow: hidden
+
+    .description
+        margin-top: 40px
+        display: flex
+        flex-direction: column
+        align-items: center
+        img
+            border: 3px solid #4CAF50
+            margin-bottom: 21px
+        p
+            padding: 10px
+            text-align: center
+            color: #fff
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+            font-family: Inter
+        &-two
+            border-radius: 30px
+            background: rgba(255, 152, 0, 0.30)
+            margin-bottom: 21px
+            p
+                width: 1143.637px
+        &-four
+            border-radius: 30px
+            background: rgba(255, 152, 0, 0.30)
+            margin-bottom: 21px
+            p
+                width: 1143.637px
+        &-five
+            display: flex
+            width: 1160px
+            align-items: center
+            justify-content: center
+            &__text
+                margin-left: 10px
+                border-radius: 30px
+                background: rgba(255, 152, 0, 0.30)
+        &-seven
+            border-radius: 30px
+            background: rgba(255, 152, 0, 0.30)
+            margin-bottom: 21px
+            p
+                width: 1143.637px
+
+// Отзывы
+
+.reviews-section
+    margin: 90px 0
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        color: #FFF
+        text-align: center
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+        font-size: 72px
+    &__rating
+        margin-top: 80px
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #FFF
+        text-align: center
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+        font-size: 100px
+        img
+            margin-right: 67px
+        p
+            margin-right: 10px
+        p:last-child
+            font-size: 36px
+    &__hr
+        width: 1160px
+
+.reviews-section__review
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: #FFF
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+
+    .review
+        display: flex
+        flex-direction: column
+        align-items: center
+        border-radius: 20px
+        background: rgba(255, 152, 0, 0.30)
+        width: 80%
+        height: auto
+        margin: 30px 0
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25)
+        border: 1px solid #FFEB3B
+
+        &__person
+            width: 90%
+            font-size: 36px
+            display: flex
+            height: 99px
+            align-items: center
+            justify-content: start
+            margin-top: 20px
+            border-bottom: 1px solid #FFEB3B
+            padding-bottom: 20px
+
+            img:first-child
+                width: 99px
+                height: 99px
+                border-radius: 99px
+            p
+                padding: 0 70px
+            p:last-child
+                padding: 0 0 0 7px
+        &__text
+            overflow: auto
+            margin: 42px 30px 20px
+            padding: 15px
+            width: auto
+            height: 170px
+            font-size: 18px
+            background: rgba(255, 152, 0, 0.30)
+            border-radius: 30px 0 0 30px
+            border: 1px solid #FFEB3B
+        &__photo
+            overflow: auto
+            box-sizing: border-box
+            width: auto
+            height: 261px
+            background: rgba(255, 152, 0, 0.30)
+            border-radius: 20px 0 0 20px
+            padding: 15px
+            margin: 15px 15px 20px
+            border: 1px solid #FFEB3B
+            img
+                width: 298px
+                height: 217px
+                border-radius: 20px
+                margin: 0 15px 15px 0
+
+// Форма
+
+.open-button
+    position: fixed
+    margin: 0 auto
+
+.form-popup
+    display: none
+    position: fixed
+    z-index: 99
+    width: 100%
+    height: 100%
+    background: rgba(0,0 ,0 , 0.7)
+
+.form-container
+    box-sizing: border-box
+    width: 600px
+    height: 396px
+    border-radius: 30px
+    background-image: url("../img/form.jpg")
+    background-color: rgba(0,0,0,.2)
+    background-blend-mode: multiply
+    background-repeat: no-repeat
+    background-position: center center
+    -webkit-background-size: cover
+    padding: 15px
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    margin: 0 auto
+    margin-top: 10%
+    .container-close
+        width: 545px
+        display: flex
+        justify-content: end
+        .btn-cancel
+            border: none
+            background: rgba(0,0,0 ,0 )
+            width: 15px
+            height: 15px
+    h1
+        width: 600px
+        color: #FFF
+        text-align: center
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+        font-family: Gabriela
+        font-size: 35px
+    p
+        font-size: 16px
+        margin: -10px 0 10px 0
+        color: #FFF
+        text-align: center
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+        font-family: Gabriela
+    input
+        margin-bottom: 8px
+        color: #000
+        font-family: Gabriela
+        font-size: 18px
+        border: none
+        padding-left: 10px
+        width: 538px
+        height: 44px
+        border-radius: 30px
+        background: #DEDEDE
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset
+    .main-btn
+        margin-top: 30px
+        display: flex
+        width: 366px
+        height: 65px
+        padding: 19px 124px 18px 125px
+        justify-content: center
+        align-items: center
+        border-radius: 30px
+        border: 1px solid #FFEB3B
+        color: #FFEB3B
+        text-align: center
+        font-family: Gabriela
+        font-size: 22px
+        background: rgba(3, 169, 244, 0.8)
+        &:hover
+            background: #09AAEB
+        &:active
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset
+
+.form-container .btn
+    opacity: 0.7
+
+.form-container .btn:hover, .open-button:hover
+    opacity: 1
+
+// Адаптив
+
+@media screen and (max-width: 1199px)
+    .container
+        width: 960px
+
+    .second-section__info
+        .info-text
+            font-size: 16px
+            width: 520px
+            height: 530px
+            text-align: justify
+            &__one
+                width: 453.135px
+                margin-bottom: 30px
+            &__two
+                width: 453.135px
+                margin-bottom: 20px
+    .second-section__info
+        .info-photo__one,
+        .info-photo__two
+            width: 400px
+            height: 250px
+    .slideshow
+        width: 960px
+        height: 550px
+
+    .route-section .description img
+        width: 480px
+        height: 300px
+    .route-section .description-two p
+        width: 955px
+    .route-section .description-four p
+        width: 955px
+    .route-section .description-five__text p
+        width: 490px
+    .route-section .description-five img
+        width: 444px
+        height: 280px
+    .route-section .description-seven p
+        width: 955px
+
+    .reviews-section__hr
+        width: 960px
+
+@media screen and (max-width: 991px)
+    .container
+        width: 720px
+
+    .second-section__title
+        font-size: 36px
+    .second-section__info
+        .info-text
+            font-size: 14px
+            width: 420px
+            height: auto
+            text-align: justify
+            &__one
+                width: 402.423px
+                margin-bottom: 30px
+            &__two
+                width: 402.423px
+                margin-bottom: 20px
+    .second-section__info
+        .info-photo__one,
+        .info-photo__two
+            width: 300px
+            height: 200px
+    .slideshow
+        width: 720px
+        height: 410px
+
+    .schedule-section
+        height: 1200px
+    .schedule-section__strip
+        top: 2162px
+    .schedule-section__title
+        &-one
+            p
+                font-size: 36px
+        &-two
+            font-size: 24px
+        &-three
+            font-size: 16px
+        &-four
+
+    .schedule-section__info
+        &-group
+            font-size: 22px
+        &-date
+            height: 680px
+            p
+                font-size: 38px
+                margin-bottom: 74px
+        &-price
+            height: 688px
+            font-size: 20px
+        &-places
+            font-size: 18px
+            height: 662px
+            p
+                margin-bottom: 94px
+
+    .button
+        width: 723px
+        button
+            width: 350px
+            height: 60px
+
+    .route-section__map
+        width: 760px
+        height: 500px
+    .route-section .description img
+        width: 375px
+        height: 250px
+    .route-section .description-two p,
+    .route-section .description-four p,
+    .route-section .description-seven p
+        width: 744px
+    .route-section .description-five
+        margin-bottom: 15px
+        img
+            width: 347px
+            height: 261px
+            margin-top: 21px
+        p
+            width: 335px
+
+    .reviews-section__title
+        font-size: 56px
+    .reviews-section__rating
+        font-size: 60px
+    .footer__right-wrapper
+        margin-left: 100px
+        margin-right: 20px
+
+@media screen and (max-width: 767px)
+    .container
+        width: 540px
+
+    .nav-menu,
+    button
+        display: none
+    .main-section
+        height: 656px
+    .header
+        img
+            margin-left: 10px
+        &-container
+            justify-content: space-between
+    .main-section__strip
+        top: 673px
+    .burger-menu
+        display: block
+    .second-section__info
+        display: flex
+        flex-direction: column
+        .info-text
+            font-size: 16px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            &__one
+                width: 402.423px
+                margin-bottom: 30px
+            &__two
+                width: 402.423px
+                margin-bottom: 20px
+    .second-section__info
+        .info-photo
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin-right: 0
+        .info-photo__one,
+        .info-photo__two
+            width: 378px
+            height: 258px
+            margin-bottom: 10px
+    .slideshow
+        width: 560px
+        height: 340px
+    .slideshow-item
+        &-text
+            height: 30%
+        p
+            font-size: 12px
+    .main-section__text
+        font-size: 100px
+
+    .footer__left-wrapper
+        margin-left: 10px
+    .footer__wrapper-logo img
+        width: 65px
+        height: 63px
+        margin-bottom: 30px
+    .footer__wrapper-icons img
+        width: 70px
+        height: 70px
+    .footer__right-wrapper
+        margin-left: 0
+
+    .schedule-section__strip
+        top: 1872px
+    .schedule-section__title
+        &-one
+            margin-left: 10px
+            p
+                font-size: 20px
+        &-two
+            font-size: 20px
+        &-three
+            font-size: 16px
+        &-four
+
+    .schedule-section__info
+        &-group p
+            width: 75px
+            font-size: 16px
+        &-date
+            height: 633px
+            p
+                width: 80px
+                font-size: 30px
+                margin-bottom: 74px
+        &-price
+            height: 656px
+            font-size: 18px
+            p
+                margin-bottom: 50px
+        &-places
+            font-size: 16px
+            height: 652px
+            p
+                margin-bottom: 75px
+
+    .button
+        width: 529px
+        button
+            width: 250px
+            height: 50px
+            font-size: 18px
+
+    .route-section__title
+        font-size: 48px
+    .route-section__title p:last-child
+        font-size: 16px
+    .route-section__map
+        width: 556px
+        height: 356px
+    .route-section .description-one,
+    .route-section .description-two ,
+    .route-section .description-three,
+    .route-section .description-four ,
+    .route-section .description-five,
+    .route-section .description-six,
+    .route-section .description-seven
+        display: flex
+        flex-direction: column
+        align-items: center
+        img
+            width: 530px
+            height: 335px
+    .route-section .description-two p,
+    .route-section .description-four p,
+    .route-section .description-seven p,
+    .route-section .description-five p
+        width: 540px
+
+    .reviews-section__title
+        font-size: 48px
+    .reviews-section__rating
+        font-size: 50px
+    .reviews-section__hr
+        width: 560px
+    .reviews-section__review .review__person img
+        width: 63px
+        height: 60px
+    .reviews-section__review .review__person img:first-child
+        width: 69px
+        height: 69px
+    .reviews-section__review .review__person
+        font-size: 24px
+
+@media screen and (max-width: 575px)
+    .container
+        width: 100%
+
+    .main-section__text
+        font-size: 64px
+
+    .second-section__info .info-photo__one,
+    .second-section__info .info-photo__two
+        width: 300px
+        height: 190px
+    .second-section__info .info-text
+        font-size: 14px
+        width: 300px
+        height: 624px
+        display: inline-block
+    .slideshow
+        display: none
+    .photo-slideshow
+        display: block
+    .second-section__info .info-text__one,
+    .second-section__info .info-text__two
+        width: 266.423px
+        margin: 10px auto
+    .second-section__title
+        font-size: 24px
+
+    .footer__left-wrapper
+        margin-left: 10px
+    .footer__wrapper-logo img
+        margin-bottom: 10px
+    .footer__wrapper-icons img
+        width: 50px
+        height: 50px
+    .footer__right-wrapper
+        margin-left: 20px
+        margin-right: 10px
+    .footer
+        height: auto
+
+    .schedule-section__title-one
+        font-size: 36px
+    .schedule-section__title-two
+        font-size: 18px
+    .schedule-section__title-three
+        text-align: center
+        margin-bottom: 30px
+    .schedule-section__title-four
+        font-size: 28px
+    .schedule-section__info
+        margin: 0 auto
+        width: 300px
+        &-group
+            height: auto
+            margin-right: 30px
+            p
+                margin-bottom: 97px
+        &-date
+            height: auto
+            margin-right: 0
+            p
+                width: 80px
+                font-size: 28px
+                margin-bottom: 88px
+        &-price
+            display: none
+        &-places
+            display: none
+        &-price-places
+            display: block
+            margin-right: 0
+            p
+                text-align: center
+                margin-bottom: 35px
+    .button button
+        width: 150px
+        height: 40px
+        font-size: 16px
+    .button
+        width: 311px
+
+    .route-section__map
+        width: 300px
+        height: 600px
+    .route-section__titl
+        font-size: 24px
+    .route-section__title p:last-child
+        font-size: 16px
+    .route-section .description-one,
+    .route-section .description-two ,
+    .route-section .description-three,
+    .route-section .description-four ,
+    .route-section .description-five,
+    .route-section .description-six,
+    .route-section .description-seven
+        img
+            width: 300px
+            height: 200px
+    .route-section .description-two p,
+    .route-section .description-four p,
+    .route-section .description-seven p,
+    .route-section .description-five p
+        width: 290px
+
+    .reviews-section__title
+        font-size: 36px
+    .reviews-section__rating
+        font-size: 28px
+    .reviews-section__rating p:last-child
+        font-size: 20px
+    .reviews-section__review .review__person p
+        padding: 0 15px
+    .reviews-section__review .review__text
+        margin: 42px 15px 20px
+    .reviews-section__review .review__photo img
+        width: 250px
+        height: 170px
+    .reviews-section__review .review__photo
+        width: 90%
+    .reviews-section__review .review
+        width: 55%

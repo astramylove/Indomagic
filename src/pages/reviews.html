@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
+    <title>Путешествие по Индонезии</title>
+</head>
+
+<body>
+    <div class="form-popup" id="myForm">
+        <form action="#" class="form-container">
+            <div class="container-close">
+                <button type="button" class="btn-cancel btn" onclick="closeForm()">
+                    <img src="../icons/крест.svg" alt="">
+                </button>
+            </div>
+            <h1>Запланируйте <br>
+                свое<br>
+                путешествие</h1>
+            <p>наш менеджер свяжется с вами</p>
+            <input type="text" placeholder="Имя:" name="name" required>
+            <input type="text" placeholder="Тел:" name="phone" required>
+            <button type="submit" class="main-btn btn">Отправить</button>
+        </form>
+    </div>
+
+    <header class="header">
+        <div class="header-container container">
+
+            <img src="../icons/logo.svg" alt="" class="header-logo logo">
+
+            <div class="header-nav nav-menu">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__list-item"><a href="../index.html">О стране</a></li>
+                    <li class="nav-menu__list-item"><a href="schedule.html">Расписание</a></li>
+                    <li class="nav-menu__list-item"><a href="route.html">Маршрут</a></li>
+                    <li class="nav-menu__list-item"><a href="reviews.html"><u>Отзывы</u></a></li>
+                </ul>
+            </div>
+
+            <button type="button" onclick="openForm()"><img src="../icons/airo.svg" alt="Самолет"
+                    class="header-icon"></button>
+
+            <div class="burger-menu">
+                <input type="checkbox" id="burger-toggle">
+                <label for="burger-toggle" class="burger">
+                    <span></span> <span></span>
+                    <span></span>
+                </label>
+                <div class="menu">
+                    <ul>
+                        <li><a href="../index.html">О стране</a></li>
+                        <li><a href="schedule.html">Расписание</a></li>
+                        <li><a href="route.html">Маршрут</a></li>
+                        <li><a href="reviews.html"><u>Отзывы</u></a></li>
+                        <li><a href="route.html#bron">Забронировать</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="main-section">
+            <div class="main-section__container">
+
+                <h2 class="main-section__text">Путешествие <br>по <br> Индонезии</h2>
+
+                <div class="main-section__strip"></div>
+
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <div class="reviews-dection__container container">
+
+                <div class="reviews-section__title">
+                    <p>Отзывы</p>
+                </div>
+
+                <div class="reviews-section__rating">
+                    <p>5.0</p>
+                    <img src="../icons/Star.svg" alt="">
+                    <p>3 отзыва</p>
+                </div>
+
+                <hr class="reviews-section__hr">
+
+                <div class="reviews-section__review">
+                    <div class="review-one review">
+                        <div class="review-one__person review__person">
+                            <img src="../img/reviews-section/ava.png" alt="">
+                            <p>Елена</p>
+                            <img src="../icons/Star.svg" alt="">
+                            <p>5.0</p>
+                        </div>
+                        <div class="review-one__text review__text">
+                            <p>Это было мое лучшее путешествие, не побоюсь таких слов! Все, от программы до
+                                организаторских
+                                мелочей продумано, остаётся только плыть по течению тура и успевать все фоткать и
+                                ощущать!
+                                Вау эффектов было очень много, чего стоит спуск на Келингкинг бич, снорклинг или подъем
+                                на
+                                вулкан. При этом успевали посещать все места, когда там нет толпы туристов!
+                                Отдельно скажу про рестораны и кафе, где мы бывали, всегда красиво и вкусно, иногда
+                                казалось, что мы в гастрономическом туре.Отели все были очень разнообразные, комфортные
+                                и
+                                всегда чистые, больше всего понравился отель на севере 😏
+                                Организаторы большие умнички, такая забота была, помогали со всеми вопросами, даже после
+                                тура ❤️</p>
+                        </div>
+                        <div class="review-one__photo review__photo">
+                            <img src="../img/reviews-section/carusel/1.jpg" alt="">
+                            <img src="../img/reviews-section/carusel/2.jpg" alt="">
+                            <img src="../img/reviews-section/carusel/3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="review-two review">
+                        <div class="review-one__person review__person">
+                            <img src="../img/reviews-section/ava2.jpg" alt="">
+                            <p>Виктор</p>
+                            <img src="../icons/Star.svg" alt="">
+                            <p>5.0</p>
+                        </div>
+                        <div class="review-one__text review__text">
+                            <p> Я просто не могу перестать восхищаться этим путешествием! Каждая минута была продумана
+                                до
+                                мельчайших деталей, и я просто наслаждался каждым моментом. Мы успели увидеть все
+                                главные
+                                достопримечательности, избегая толпы туристов, и при этом наслаждались великолепными
+                                видами
+                                и невероятными эмоциями. От отелей до ресторанов - все было просто идеально!
+                                Организаторы
+                                заслуживают огромного похвалы за их профессионализм и заботу о каждом путешественнике.
+                                Без
+                                сомнения, это было одно из самых незабываемых путешествий в моей жизни!</p>
+                        </div>
+                        <div class="review-one__photo review__photo">
+                            <img src="../img/reviews-section/carusel/4.jpg" alt="">
+                            <img src="../img/reviews-section/carusel/3.jpg" alt="">
+                            <img src="../img/reviews-section/carusel/1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="review-three review">
+                        <div class="review-one__person review__person">
+                            <img src="../img/reviews-section/ava3.jpg" alt="">
+                            <p>Андрей</p>
+                            <img src="../icons/Star.svg" alt="">
+                            <p>5.0</p>
+                        </div>
+                        <div class="review-one__text review__text">
+                            <p> Я просто словами не могу передать, насколько я благодарен за это путешествие! Каждый
+                                день
+                                был наполнен невероятными приключениями и удивительными открытиями. Мы побывали на таких
+                                потрясающих местах, что казалось, что мы попали в сказку. Отель, где мы останавливались,
+                                был
+                                просто раем на земле - уютный, комфортный и с прекрасным видом. А еда... она была
+                                настолько
+                                вкусной, что я просто не мог наесться! Организаторы этого путешествия заслуживают самой
+                                высокой похвалы за их профессионализм и заботу о каждом детале. Я никогда не забуду этот
+                                незабываемый опыт!</p>
+                        </div>
+                        <div class="review-one__photo review__photo">
+                            <img src="../img/reviews-section/carusel/2.jpg" alt="">
+                            <img src="../img/reviews-section/carusel/1.jpg" alt="">
+                            <img src="../img/reviews-section/carusel/4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left-wrapper">
+                <div class="footer__wrapper-logo">
+                    <img src="../icons/logo.svg" alt="">
+                </div>
+                <div class="footer__wrapper-icons">
+                    <img src="../icons/Social_Media/Whatsapp.png" alt="">
+                    <img src="../icons/Social_Media/Instagram.png" alt="">
+                    <img src="../icons/Social_Media/Telegram.png" alt="">
+                    <img src="../icons/Social_Media/Vkontakte.png" alt="">
+                </div>
+            </div>
+            <div class="footer__right-wrapper">
+                <p><a href="../index.html">О стране</a></p>
+                <p><a href="schedule.html">Расписание</a></p>
+                <p><a href="route.html">Маршрут</a></p>
+                <p><a href="reviews.html"><u>Отзывы</u></a></p>
+                <p><a href="">suvalovvlad57@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

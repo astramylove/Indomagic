@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
+    <title>Путешествие по Индонезии</title>
+</head>
+
+<body>
+    <div class="form-popup" id="myForm">
+        <form action="#" class="form-container">
+            <div class="container-close">
+                <button type="button" class="btn-cancel btn" onclick="closeForm()">
+                    <img src="../icons/крест.svg" alt="">
+                </button>
+            </div>
+            <h1>Запланируйте <br>
+                свое<br>
+                путешествие</h1>
+            <p>наш менеджер свяжется с вами</p>
+            <input type="text" placeholder="Имя:" name="name" required>
+            <input type="text" placeholder="Тел:" name="phone" required>
+            <button type="submit" class="main-btn btn">Отправить</button>
+        </form>
+    </div>
+
+    <header class="header">
+        <div class="header-container container">
+
+            <img src="../icons/logo.svg" alt="" class="header-logo logo">
+
+            <div class="header-nav nav-menu">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__list-item"><a href="../index.html">О стране</a></li>
+                    <li class="nav-menu__list-item"><a href="schedule.html"><u>Расписание</u></a></li>
+                    <li class="nav-menu__list-item"><a href="route.html">Маршрут</a></li>
+                    <li class="nav-menu__list-item"><a href="reviews.html">Отзывы</a></li>
+                </ul>
+            </div>
+
+            <button type="button" onclick="openForm()"><img src="../icons/airo.svg" alt="Самолет"
+                    class="header-icon"></button>
+
+            <div class="burger-menu">
+                <input type="checkbox" id="burger-toggle">
+                <label for="burger-toggle" class="burger">
+                    <span></span> <span></span>
+                    <span></span>
+                </label>
+                <div class="menu">
+                    <ul>
+                        <li><a href="../index.html">О стране</a></li>
+                        <li><a href="schedule.html"><u>Расписание</u></a></li>
+                        <li><a href="route.html">Маршрут</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="route.html#bron">Забронировать</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="main-section">
+            <div class="main-section__container">
+
+                <h2 class="main-section__text">Путешествие <br>по <br> Индонезии</h2>
+
+                <div class="main-section__strip"></div>
+
+            </div>
+        </section>
+
+        <section class="schedule-section">
+            <div class="schedule-section__container container">
+
+                <div class="schedule-section__title">
+                    <p class="schedule-section__title-one">Расписание</p>
+                    <p class="schedule-section__title-two">Индонезийские приключения</p>
+                    <p class="schedule-section__title-three">*Авиаперелёт, проживание и включены в стоимость</p>
+                    <p class="schedule-section__title-four">Март 2024</p>
+                </div>
+
+                <div class="schedule-section__info">
+                    <div class="schedule-section__info-group">
+                        <p>Группа 1</p>
+                        <p>Группа 2</p>
+                        <p>Группа 3</p>
+                        <p>Группа 4</p>
+                        <p>Группа 5</p>
+                        <p>Группа 6</p>
+                    </div>
+
+                    <div class="schedule-section__info-date">
+                        <p>3-13</p>
+                        <p>5-15</p>
+                        <p>9-19</p>
+                        <p>11-21</p>
+                        <p>15-25</p>
+                        <p>19-29</p>
+                    </div>
+
+                    <div class="schedule-section__info-price">
+                        <p>170.000р <br>
+                            c человека</p>
+                        <p>170.000р <br>
+                            c человека</p>
+                        <p>170.000р <br>
+                            c человека</p>
+                        <p>170.000р <br>
+                            c человека</p>
+                        <p>170.000р <br>
+                            c человека</p>
+                        <p>170.000р <br>
+                            c человека</p>
+                    </div>
+
+                    <div class="schedule-section__info-places">
+                        <p>Свободные места: 2/12</p>
+                        <p>Свободные места: 6/12</p>
+                        <p>Свободные места: 7/12</p>
+                        <p>Свободные места: 9/12</p>
+                        <p>Свободные места: 10/12</p>
+                        <p>Свободные места: 12/12</p>
+                    </div>
+
+                    <div class="schedule-section__info-price-places">
+                        <p>170.000р <br>
+                            c человека <br><br>
+                            Свободные места: 2/12</p>
+                        <p>170.000р <br>
+                            c человека <br><br>
+                            Свободные места: 2/12</p>
+                        <p>170.000р <br>
+                            c человека <br><br>
+                            Свободные места: 2/12</p>
+                        <p>170.000р <br>
+                            c человека <br><br>
+                            Свободные места: 2/12</p>
+                        <p>170.000р <br>
+                            c человека <br><br>
+                            Свободные места: 2/12</p>
+                        <p>170.000р <br>
+                            c человека <br><br>
+                            Свободные места: 2/12</p>
+                    </div>
+                </div>
+
+                <div class="schedule-section__button button">
+                    <button type="button" onclick="openForm()" class="button__one">Консультация</button>
+                    <button type="button" class="button__two" onclick="openForm()">Забронировать</button>
+                </div>
+
+                <div class="schedule-section__strip strip"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left-wrapper">
+                <div class="footer__wrapper-logo">
+                    <img src="../icons/logo.svg" alt="">
+                </div>
+                <div class="footer__wrapper-icons">
+                    <img src="../icons/Social_Media/Whatsapp.png" alt="">
+                    <img src="../icons/Social_Media/Instagram.png" alt="">
+                    <img src="../icons/Social_Media/Telegram.png" alt="">
+                    <img src="../icons/Social_Media/Vkontakte.png" alt="">
+                </div>
+            </div>
+            <div class="footer__right-wrapper">
+                <p><a href="../index.html">О стране</a></p>
+                <p><a href="schedule.html"><u>Расписание</u></a></p>
+                <p><a href="route.html">Маршрут</a></p>
+                <p><a href="reviews.html">Отзывы</a></p>
+                <p><a href="">suvalovvlad57@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
+    <title>Путешествие по Индонезии</title>
+</head>
+
+<body>
+    <div class="form-popup" id="myForm">
+        <form action="#" class="form-container">
+            <div class="container-close">
+                <button type="button" class="btn-cancel btn" onclick="closeForm()">
+                    <img src="../icons/крест.svg" alt="">
+                </button>
+            </div>
+            <h1>Запланируйте <br>
+                свое<br>
+                путешествие</h1>
+            <p>наш менеджер свяжется с вами</p>
+            <input type="text" placeholder="Имя:" name="name" required>
+            <input type="text" placeholder="Тел:" name="phone" required>
+            <button type="submit" class="main-btn btn">Отправить</button>
+        </form>
+    </div>
+
+    <header class="header">
+        <div class="header-container container">
+
+            <img src="../icons/logo.svg" alt="" class="header-logo logo">
+
+            <div class="header-nav nav-menu">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__list-item"><a href="../index.html">О стране</a></li>
+                    <li class="nav-menu__list-item"><a href="schedule.html">Расписание</a></li>
+                    <li class="nav-menu__list-item"><a href="route.html"><u>Маршрут</u></a></li>
+                    <li class="nav-menu__list-item"><a href="reviews.html">Отзывы</a></li>
+                </ul>
+            </div>
+
+            <button type="button" onclick="openForm()"><img src="../icons/airo.svg" alt="Самолет"
+                    class="header-icon"></button>
+
+            <div class="burger-menu">
+                <input type="checkbox" id="burger-toggle">
+                <label for="burger-toggle" class="burger">
+                    <span></span> <span></span>
+                    <span></span>
+                </label>
+                <div class="menu">
+                    <ul>
+                        <li><a href="../index.html">О стране</a></li>
+                        <li><a href="schedule.html">Расписание</a></li>
+                        <li><a href="route.html"><u>Маршрут</u></a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="route.html#bron">Забронировать</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-section">
+            <div class="main-section__container">
+
+                <h2 class="main-section__text">Путешествие <br>по <br> Индонезии</h2>
+
+                <div class="main-section__strip"></div>
+
+            </div>
+        </section>
+
+        <section class="route-section">
+            <div class="route-section__container container">
+                <div class="route-section__title">
+                    <p>Маршрут</p>
+                    <p>Юг индонезийского острова Бали</p>
+                </div>
+                <div class="route-section__map">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A544ecd019773b8255900a8ccf95d62defa985c1045e1ee9971a6eea2aab16ea8&amp;width=975&amp;height=601&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+
+                <div class="route-section__description description">
+                    <div class="description-one">
+                        <img src="../img/route-section/1.jpg" alt="">
+                        <img src="../img/route-section/2.jpg" alt="">
+                    </div>
+                    <div class="description-two">
+                        <p>Убуд — город, расположенный на острове Бали, считается прославленным центром изящных
+                            искусств,
+                            ремесел, танца и музыки. Здесь когда-то собирались представители богемы, туристы и хиппи,
+                            однако
+                            сейчас Убуд превратился в элегантный курорт, город галерей и особняков, куда прибывают
+                            коллекционеры искусства и путешественники. Мы же советуем вам остаться здесь на ночь, а
+                            можно и
+                            дольше. В городе есть жилье на любой вкус: от дешевых комнат в частных домах и
+                            очаровательных
+                            небольших гостиниц до дорогих роскошных отелей, расположившихся на берегах реки в
+                            окрестностях
+                            Убуда. <br>
+                            Чтобы поездка вас наполнила новыми эмоциями важно сначала очиститься от проблем и забот.
+                            Начнем
+                            с церемонией очищения на священном источнике, которую проведет наш местный друг Ваян. Здесь
+                            место силы и мы загадаем желания, которые исполняются у многих наших гостей. Далее будет
+                            настоящая тропическая баня в джунглях, где мы приготовили две секретные практики, которые не
+                            оставляют равнодушных. <br>
+                            Вечер закончим крутейшим массажем, с проработкой мышц от которого все гости просто фанатеют.
+                            Нас ждет прогулка по рисовым полям, там сделаем фото. Там же отдохнем и почилим в бассейнах
+                            с
+                            видом на рисовые поля. Далее красивейший рафтинг (сплав) по реке среди джунглей.</p>
+                    </div>
+                    <div class="description-three">
+                        <img src="../img/route-section/3.jpg" alt="">
+                        <img src="../img/route-section/4.jpg" alt="">
+                    </div>
+                    <div class="description-four">
+                        <p>Нуса-Пенида – чудо-остров, мечта экотуриста, дайверский рай, расположившийся в 12 км к
+                            юго-востоку от Бали и в течение долгого времени остававшийся в тени своего более
+                            раскрученного
+                            соседа. Поездки сюда принято сравнивать с путешествием на машине времени: невзирая на
+                            динамично
+                            развивающуюся инфраструктуру, по-настоящему освоенным остается лишь северо-западное
+                            побережье
+                            острова. При этом стоит только отклониться от рекомендованных гидами маршрутов и податься в
+                            юго-восточном направлении, как у вас появится уникальный шанс отмотать 30 лет назад и
+                            представить, как выглядели на заре своей туристической «карьеры» Бали и другие курорты Азии,
+                            пока до них не добрались десанты бэкпекеров. <br>
+                            <br>
+                            Мы едем плавать с гигантскими скатами манта. Нас ждет 2-3 часа снорклинга в четырех
+                            локациях.
+                            Закат встретим на знаметой скале в виде динозавра. Вечером веселимся у бассейна под шум
+                            океана,
+                            ведь отель в метре от океана. <br>
+                            <br>
+                            Встречаем рассвет на инста локациях, можно будет сделать кучу контента и покататься на
+                            качелях.
+                            А вечером едем на разрушенный пляж и бухту ангелов, встретим еще один закат с видом на
+                            океан.
+                        </p>
+                    </div>
+                    <div class="description-five">
+                        <img src="../img/route-section/5.jpg" alt="">
+                        <div class="description-five__text">
+                            <p>Меняем юг на север, где горы, прохлада и часто идут дожди. Нас ждет самый высокий водопад
+                                острова. Мы заселеемся в отель в горах с видом на джунгли. Также заедем в гости к
+                                местному
+                                жителю, у которого приют для животных. <br>
+                                <br>
+                                Можно отдохнуть, сходить пешком из отеля на местный водопад, утопающий в саду, где
+                                совсем
+                                нет туристов. А те, кто не устал, поедут на комплекс водопадов, в которые можно прыгать
+                                с
+                                разной высоты 5 и 10 метров. Это еще одна проработка страха в нашем туре. Также будет
+                                крутая
+                                фотозона у озера и ресторан, сквозь который проходят облака.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="description-six">
+                        <img src="../img/route-section/6.jpg" alt="">
+                        <img src="../img/route-section/7.jpg" alt="">
+                    </div>
+                    <div class="description-seven">
+                        <p>Остров Ява — индонезийское все. Ява — начало всех начал. Ява — исторический, культурный,
+                            религиозный, политический, финансовый, да какой хотите, центр страны, перекресток всех ее
+                            транспортных и торговых путей. <br>
+                            <br>
+                            Едем на самый красивый и необычный вулкан в Индонезии, внутри которого находится самое
+                            большое в
+                            мире кислотное озеро. Сожженные лавой деревья, клубы пара и нереально голубой цвет озера в
+                            кратере создают поистине мистическую атмосферу этого места. <br>
+                            Сафари на джипах<br>
+                            Рассвет с видом на вулканы<br>
+                            Поездка на лошадях до кратера<br>
+                            Кратер вулкана Бромо<br>
+                            Путь около 8-10 часов, это самый длинно никто из гостей еще ни разу не сказал, чтоый
+                            переезд, н
+                            это того не стоило.<br>
+                            Едем на вулкан Бромо, куда не попадают 97% приезжающих на Бали и который мы нашли только в
+                            нашем
+                            путешествии. Вечером заселяемся в отель и отдыхаем. Ночью за нами приедут инстаграмные
+                            джипы, на
+                            которых мы поедем встречать рассвет с видом на 5 вулканов. Далее пересаживаемся на лошадей,
+                            которые довезут нас до самого кратера. Нам лишь останется подняться 5 минут по ступеням и
+                            увидеть журчащий кратер вулкана Бромо.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="schedule-section__button button">
+                    <button type="button" onclick="openForm()" class="button__one button">Консультация</button>
+                    <button id="bron" type="button" class="button__two button"
+                        onclick="openForm()">Забронировать</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left-wrapper">
+                <div class="footer__wrapper-logo">
+                    <img src="../icons/logo.svg" alt="">
+                </div>
+                <div class="footer__wrapper-icons">
+                    <img src="../icons/Social_Media/Whatsapp.png" alt="">
+                    <img src="../icons/Social_Media/Instagram.png" alt="">
+                    <img src="../icons/Social_Media/Telegram.png" alt="">
+                    <img src="../icons/Social_Media/Vkontakte.png" alt="">
+                </div>
+            </div>
+            <div class="footer__right-wrapper">
+                <p><a href="../index.html">О стране</a></p>
+                <p><a href="schedule.html">Расписание</a></p>
+                <p><a href="route.html"><u>Маршрут</u></a></p>
+                <p><a href="reviews.html">Отзывы</a></p>
+                <p><a href="">suvalovvlad57@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
